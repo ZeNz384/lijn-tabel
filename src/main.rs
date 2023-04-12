@@ -68,12 +68,13 @@ fn main() {
     let lijn_kunst_beneden_kolom_1 = TabelLijn::regel_met_plus_min_plus(18, 1);
     let lijn_kunst_beneden_kolom_2 = TabelLijn::regel_met_plus_min_plus(6, 0);
     println!(
-        "{}{}\n{}{}\n{}\n{}{}\n{}{}",
+        "{}{}\n{}{}\n{}{}\n{}{}\n{}{}",
         lijn_kunst_boven_kolom_1,
         lijn_kunst_boven_kolom_2,
         lijn_kunst_boven_binnen_kolom_1_onder,
         lijn_kunst_boven_binnen_kolom_2_onder,
         lijn_kunst_beneden_kolom_1,
+        lijn_kunst_beneden_kolom_2,
         lijn_kunst_boven_binnen_kolom_3_onder,
         lijn_kunst_boven_binnen_kolom_4_onder,
         lijn_kunst_beneden_kolom_1,
