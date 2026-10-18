@@ -2,8 +2,8 @@ pub mod lijn;
 pub mod opmaak;
 pub mod spaties;
 
-use crate::tabel::opmaak::Opmaak;
-use crate::tabel::spaties::Spaties;
+pub use crate::tabel::opmaak::Opmaak;
+pub use crate::tabel::spaties::Spaties;
 
 pub struct Tabel;
 impl Tabel {
