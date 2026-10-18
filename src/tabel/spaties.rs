@@ -19,4 +19,8 @@ impl Spaties {
         let waarde = format!("{spaties_er_voor}{getal}{spaties_er_na}");
         waarde
     }
+    pub fn datum_nummer(&self, spaties_er_voor: &str, getal: &u32, spaties_er_na: &str) -> String {
+        let waarde = format!("{spaties_er_voor}{:02}{spaties_er_na}", getal);
+        waarde
+    }
 }
