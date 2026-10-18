@@ -2,6 +2,7 @@ pub mod lijn;
 pub mod opmaak;
 pub mod spaties;
 
+pub use lijn::TabelLijn;
 pub use crate::tabel::opmaak::Opmaak;
 pub use crate::tabel::spaties::Spaties;
 
