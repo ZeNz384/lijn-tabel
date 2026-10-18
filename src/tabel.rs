@@ -39,4 +39,14 @@ impl Tabel {
         let na_eerste_tabel_cel = spaties.nummer(&er_voor, nummer, &er_na);
         format!("{na_eerste_tabel_cel}{}", opmaak.streep())
     }
+    pub fn tabel_cel_staande_streep_rechter_zijkant_datum_nummer(
+        spaties: &Spaties,
+        nummer: &u32,
+        opmaak: &Opmaak,
+    ) -> String {
+        let er_voor = Spaties::nummer_naar_spatie(spaties.er_voor);
+        let er_na = Spaties::nummer_naar_spatie(spaties.er_na);
+        let na_eerste_tabel_cel = spaties.datum_nummer(&er_voor, nummer, &er_na);
+        format!("{na_eerste_tabel_cel}{}", opmaak.streep())
+    }
 }
