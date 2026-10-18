@@ -1,7 +1,5 @@
 mod tabel;
-use crate::tabel::lijn::TabelLijn;
-use crate::tabel::opmaak::Opmaak;
-use crate::tabel::spaties::Spaties;
+use tabel::{Tabel, Spaties, Opmaak, TabelLijn};
 
 struct BacklogExampleSubjects {
     // Message reads:
@@ -42,25 +40,25 @@ fn main() {
 
 
     let lijn_kunst_boven_binnen_kolom_1_onder =
-        tabel::Tabel::tabel_cel_staande_streep_bijde_zijkanten_woord(
+        Tabel::tabel_cel_staande_streep_bijde_zijkanten_woord(
             &teken_spaties_style_one,
             some_table_content_qeastions,
             &teken_opmaak,
         );
     let lijn_kunst_boven_binnen_kolom_2_onder =
-        tabel::Tabel::tabel_cel_staande_streep_rechter_zijkant_nummer(
+        Tabel::tabel_cel_staande_streep_rechter_zijkant_nummer(
             &teken_spaties_style_one,
             &some_table_content_qeastions_year,
             &teken_opmaak,
         );
     let lijn_kunst_boven_binnen_kolom_3_onder =
-        tabel::Tabel::tabel_cel_staande_streep_bijde_zijkanten_woord(
+        Tabel::tabel_cel_staande_streep_bijde_zijkanten_woord(
             &teken_spaties_style_two,
             some_subject_content_no_idea,
             &teken_opmaak,
         );
     let lijn_kunst_boven_binnen_kolom_4_onder =
-        tabel::Tabel::tabel_cel_staande_streep_rechter_zijkant_woord(
+        Tabel::tabel_cel_staande_streep_rechter_zijkant_woord(
             &teken_spaties_style_one,
             &empty_spaces,
             &teken_opmaak,
